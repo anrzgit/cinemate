@@ -17,7 +17,7 @@ export const Search = ({apiPath}) => {
         <p className="text-3xl text-gray-700 dark:text-white">{ movies.length === 0 ? `No result found for '${queryTerm}'` : `Result for '${queryTerm}'` }</p>
       </section>
       <section className="max-w-7xl mx-auto py-7">
-        <div className="flex justify-start flex-wrap">       
+        <div className="flex justify-center flex-wrap">       
           { movies.map((movie) => (
             <Card key={movie.id} movie={movie} />
           )) }          
