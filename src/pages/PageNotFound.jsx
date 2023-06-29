@@ -1,6 +1,6 @@
 import React from 'react'
 import PageNotFoundImage from '../assets/images/6342464.jpg'
-import { Link } from 'react-router-dom'
+
 
 export const PageNotFound = () => {
   return (
