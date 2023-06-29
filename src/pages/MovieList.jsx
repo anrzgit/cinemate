@@ -1,6 +1,8 @@
 import { useFetch } from "../hooks/useFetch";
 import { useTitle } from "../hooks/useTitle";
 import { Card } from "../components";
+import ScrollToTop from "react-scroll-to-top";
+
 
 
 export const MovieList = ({apiPath, title}) => {
@@ -17,6 +19,7 @@ export const MovieList = ({apiPath, title}) => {
           )) }          
         </div>
       </section>
+      <ScrollToTop smooth color="#6f00ff" />
     </main>
   )
 }

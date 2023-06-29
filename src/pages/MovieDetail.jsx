@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { useTitle } from '../hooks/useTitle';
+
 
 
 
@@ -20,6 +22,8 @@ export const MovieDetail = () => {
     }
     fetchMovieDetail()
   }, [url])
+
+  useTitle(movie.title);
 
   return (
     <main>
@@ -69,7 +73,6 @@ export const MovieDetail = () => {
             <span className="mr-2 font-bold">IMDB Code:</span>
             <a href={`https://www.imdb.com/title/${movie.imdb_id}`} target="_blank" rel="noreferrer">{movie.imdb_id}</a>
           </p>
-
         </div>
       </section>
     </main>
